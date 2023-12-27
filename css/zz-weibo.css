@@ -38,11 +38,11 @@
     background: #f86400
 }
 
-#weibo .item-content {
+weibo .item-content {
     text-align: center;
 }
 
-#weibo-container {
+weibo-container {
     width: 100%;
     height: 140px;
     font-size: 95%;
@@ -65,7 +65,7 @@
     margin-right: auto
 }
 
-#.weibo-num {
+.weibo-num {
     float: right
 }
 
@@ -86,6 +86,6 @@ weibo-container a {
 }
 
 /* 隐藏滚动条 */
-weibo-container::-webkit-scrollbar{
+#weibo-container::-webkit-scrollbar{
     display: none;
 }
