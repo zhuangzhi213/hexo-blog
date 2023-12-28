@@ -9719,6 +9719,9 @@ h1.page-title + .tag-cloud-list {
 #aside-content .card-announcement .item-headline i {
   color: var(--anzhiyu-main);
 }
+#aside-content .card-weibo .item-headline i {
+  color: #d52c2b;
+}
 .avatar-img {
   width: 118px;
   right: 0;
