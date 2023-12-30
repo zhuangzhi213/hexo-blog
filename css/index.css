@@ -2859,11 +2859,7 @@ input::placeholder {
   -ms-transform: rotate(-1deg);
   transform: rotate(-1deg);
   -webkit-overflow-scrolling: touch;
-  background: -webkit--webkit-linear-gradient(180deg, #fff 28%, #fdeded, #fdf2e2, #ffffeb, #f2fdf2, #f0f4ff, #f5ecf9);
-  background: -webkit--moz-linear-gradient(180deg, #fff 28%, #fdeded, #fdf2e2, #ffffeb, #f2fdf2, #f0f4ff, #f5ecf9);
-  background: -webkit--o-linear-gradient(180deg, #fff 28%, #fdeded, #fdf2e2, #ffffeb, #f2fdf2, #f0f4ff, #f5ecf9);
-  background: -webkit--ms-linear-gradient(180deg, #fff 28%, #fdeded, #fdf2e2, #ffffeb, #f2fdf2, #f0f4ff, #f5ecf9);
-  background: -webkit-linear-gradient(-90deg, #fff 28%, #fdeded, #fdf2e2, #ffffeb, #f2fdf2, #f0f4ff, #f5ecf9);
+  background: var(--anzhiyu-background);
   background-attachment: local;
   background-position: center;
   background-size: cover;

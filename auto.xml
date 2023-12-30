@@ -6,7 +6,7 @@
   <link href="https://www.zhuangzhi.love/auto.xml" rel="self"/>
   
   <link href="https://www.zhuangzhi.love/"/>
-  <updated>2023-11-20T06:30:44.507Z</updated>
+  <updated>2023-12-30T15:15:56.055Z</updated>
   <id>https://www.zhuangzhi.love/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2023,时间轴即将穿透的尽头,我该如何记录这一年?</title>
+    <link href="https://www.zhuangzhi.love/blog/006-2023,%E6%97%B6%E9%97%B4%E8%BD%B4%E5%8D%B3%E5%B0%86%E7%A9%BF%E9%80%8F%E7%9A%84%E5%B0%BD%E5%A4%B4,%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E8%AE%B0%E5%BD%95%E8%BF%99%E4%B8%80%E5%B9%B4/"/>
+    <id>https://www.zhuangzhi.love/blog/006-2023,%E6%97%B6%E9%97%B4%E8%BD%B4%E5%8D%B3%E5%B0%86%E7%A9%BF%E9%80%8F%E7%9A%84%E5%B0%BD%E5%A4%B4,%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E8%AE%B0%E5%BD%95%E8%BF%99%E4%B8%80%E5%B9%B4/</id>
+    <published>2023-12-31T04:01:56.000Z</published>
+    <updated>2023-12-30T15:15:56.055Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2023再见。"><a href="#2023再见。" class="headerlink" title="2023再见。"></a><center><font color=orange>2023再见。</center></font></h1><h1 id="2024你好！"><a href="#2024你好！" class="headerlink" title="2024你好！"></a><center><font color="#DA3B35">2024你好！</center></font></h1><div class="img-wrap"><div class="img-bg"><img class="img" src="https://pic.ntimg.cn/BannerPic/20231225/home/20231225100439.jpg"/></div></div><div class="timeline red"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>2024</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>01-01</p></div></div><div class='timeline-item-content'><p>2024，迎接新年第一缕曙光</p></div></div></div><div class="timeline orange"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>2023</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>12-31</p></div></div><div class='timeline-item-content'><p>2023，挥手告别落日余晖</p></div></div></div><blockquote><p>回首2023，这一年</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;2023再见。&quot;&gt;&lt;a href=&quot;#2023再见。&quot; class=&quot;headerlink&quot; title=&quot;2023再见。&quot;&gt;&lt;/a&gt;&lt;center&gt;&lt;font color=orange&gt;2023再见。&lt;/center&gt;&lt;/font&gt;&lt;/h1&gt;&lt;h1 id=&quot;20</summary>
+      
+    
+    
+    
+    <category term="日常分享" scheme="https://www.zhuangzhi.love/categories/%E6%97%A5%E5%B8%B8%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="生活" scheme="https://www.zhuangzhi.love/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>【Hexo教程】如何让百度快速收录你的博客</title>
@@ -139,8 +163,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://www.zhuangzhi.love/blog/000-Hello%20World/"/>
-    <id>https://www.zhuangzhi.love/blog/000-Hello%20World/</id>
+    <link href="https://www.zhuangzhi.love/blog/000-Hello,World/"/>
+    <id>https://www.zhuangzhi.love/blog/000-Hello,World/</id>
     <published>2023-09-09T10:03:26.000Z</published>
     <updated>2023-11-01T14:15:12.641Z</updated>
     
