@@ -2819,17 +2819,21 @@ body {
   min-height: 100%;
   background: var(--global-bg);
   color: var(--font-color);
-  font-size: var(--global-font-size);
+  font-size: 13px;
   font-family: MiSans;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 *::-webkit-scrollbar {
-  width: 6px;
+  width: 7px;
   height: 6px;
 }
 *::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-color);
+  background: -webkit-linear-gradient(90deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+  background: -moz-linear-gradient(90deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+  background: -o-linear-gradient(90deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+  background: -ms-linear-gradient(90deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+  background: linear-gradient(0deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
   border-radius: 8px;
   cursor: pointer;
 }
@@ -2846,6 +2850,12 @@ body {
 input::placeholder {
   color: var(--font-color);
 }
+[data-theme="dark"] #web_bg {
+  background: #000;
+}
+[data-theme="dark"] #footer {
+  backgroun: #000;
+}
 #web_bg {
   position: fixed;
   z-index: -999;
@@ -2859,7 +2869,11 @@ input::placeholder {
   -ms-transform: rotate(-1deg);
   transform: rotate(-1deg);
   -webkit-overflow-scrolling: touch;
-  background: var(--anzhiyu-background);
+  background: -webkit-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: -moz-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: -o-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: -ms-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: linear-gradient(180deg, #e3fdf5 0%, #ffe6fa 100%);
   background-attachment: local;
   background-position: center;
   background-size: cover;
@@ -10624,7 +10638,7 @@ color
 }
 #footer-wrap #anzhiyu-footer .footer-title {
   color: var(--anzhiyu-secondtext);
-  font-size: 1rem;
+  font-size: 14px;
   text-align: left;
   font-weight: 600;
   margin: 1rem 0;
@@ -10644,8 +10658,8 @@ color
   flex-direction: column;
 }
 #footer-wrap #anzhiyu-footer .footer-item {
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 13px;
+  line-height: 0.7rem;
   margin: 8px 0;
   color: var(--anzhiyu-fontcolor);
   margin-right: auto;
@@ -10665,7 +10679,7 @@ color
   color: var(--light-grey);
 }
 #footer-wrap i {
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1rem;
   height: 1rem;
 }
