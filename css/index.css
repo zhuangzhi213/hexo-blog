@@ -7246,7 +7246,7 @@ body[data-type="link"] #page .page-title {
   display: -ms-flexbox;
   display: box;
   display: flex;
-  color: var(--anzhiyu-secondtext);
+  color: var(--anzhiyu-yellow);
   font-size: 0.75rem;
   position: relative;
   margin-right: 8px;
@@ -7258,13 +7258,13 @@ body[data-type="link"] #page .page-title {
   display: -ms-flexbox;
   display: box;
   display: flex;
-  color: var(--anzhiyu-secondtext);
+  color: var(--anzhiyu-theme);
   font-size: 0.75rem;
   position: relative;
   margin-right: 8px;
 }
 #recent-posts > .recent-post-item .recent-post-info .article-title {
-  font-size: 20px;
+  font-size: 18px;
   -webkit-line-clamp: 2;
   line-height: 30px;
   margin-top: 0;
