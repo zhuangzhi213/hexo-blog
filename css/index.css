@@ -7218,7 +7218,7 @@ body[data-type="link"] #page .page-title {
   display: -ms-flexbox;
   display: box;
   display: flex;
-  color: var(--anzhiyu-secondtext);
+  color: var(--anzhiyu-orange);
   font-size: 0.75rem;
   position: relative;
 }
