@@ -19811,7 +19811,11 @@ body .snackbar-container::after {
   box-shadow: 0 8px 16px -4px rgba(44,45,48,0.047);
   border-radius: 50px;
   letter-spacing: 5px;
-  background-color: var(--anzhiyu-card-bg);
+  background: -webkit-linear-gradient(270deg, #2af598 0%, #009efd 100%);
+  background: -moz-linear-gradient(270deg, #2af598 0%, #009efd 100%);
+  background: -o-linear-gradient(270deg, #2af598 0%, #009efd 100%);
+  background: -ms-linear-gradient(270deg, #2af598 0%, #009efd 100%);
+  background: linear-gradient(180deg, #2af598 0%, #009efd 100%);
 }
 #twikoo .tk-comments .OwO .OwO-body {
   border: var(--style-border-always) !important;
@@ -20222,6 +20226,11 @@ a
   padding-top: 1rem;
   border: none;
   border-top: var(--style-border-dashed);
+  background: -webkit-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: -moz-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: -o-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: -ms-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: linear-gradient(180deg, #e3fdf5 0%, #ffe6fa 100%);
 }
 #post-comment .comment-tips {
   background-color: rgba(103,194,58,0.13);
@@ -20243,7 +20252,11 @@ a
   display: flex;
 }
 #page .tk-comments-container > .tk-comment {
-  background: var(--anzhiyu-card-bg);
+  background: -webkit-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: -moz-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: -o-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: -ms-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: linear-gradient(180deg, #e3fdf5 0%, #ffe6fa 100%);
   padding: 1rem;
   padding-bottom: 1rem;
   border: var(--style-border);
@@ -20268,7 +20281,7 @@ a
 .tk-comments .tk-row-actions-start {
   position: absolute;
   top: -84px;
-  left: 17px;
+  left: 80px;
 }
 @media screen and (max-width: 768px) {
   .OwO .OwO-body {
@@ -24070,15 +24083,15 @@ a.categoryButton i {
 }
 
 a.categoryButton.blue {
-  background: linear-gradient(to right, #358bff, #15c6ff);
+  background: linear-gradient(to right,#e909ff 0%, #92fe9d 100%);
   background-size: 200%;
 }
 a.categoryButton.red {
-  background: linear-gradient(to right, #f65, #ffbf37);
+  background: linear-gradient(to right, #f83600 0%, #ffd50a 100%);
   background-size: 200%;
 }
 a.categoryButton.green {
-  background: linear-gradient(to right, #18e7ae, #1eebeb);
+  background: linear-gradient(90deg,#0fd850 0%, #f9f047 100%);
   background-size: 200%;
 }
 
