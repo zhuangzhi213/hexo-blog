@@ -19766,7 +19766,7 @@ body .snackbar-container::after {
   min-width: 31.25rem;
 }
 .twikoo svg {
-  color: var(--anzhiyu-fontcolor);
+  color: var(--anzhiyu-main);
 }
 #owo-big {
   position: fixed;
@@ -19811,11 +19811,7 @@ body .snackbar-container::after {
   box-shadow: 0 8px 16px -4px rgba(44,45,48,0.047);
   border-radius: 50px;
   letter-spacing: 5px;
-  background: -webkit-linear-gradient(270deg, #2af598 0%, #009efd 100%);
-  background: -moz-linear-gradient(270deg, #2af598 0%, #009efd 100%);
-  background: -o-linear-gradient(270deg, #2af598 0%, #009efd 100%);
-  background: -ms-linear-gradient(270deg, #2af598 0%, #009efd 100%);
-  background: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+  background-color: var(--anzhiyu-card-bg);
 }
 #twikoo .tk-comments .OwO .OwO-body {
   border: var(--style-border-always) !important;
@@ -20226,11 +20222,7 @@ a
   padding-top: 1rem;
   border: none;
   border-top: var(--style-border-dashed);
-  background: -webkit-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
-  background: -moz-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
-  background: -o-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
-  background: -ms-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
-  background: linear-gradient(180deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: var(--anzhiyu-card-bg);
 }
 #post-comment .comment-tips {
   background-color: rgba(103,194,58,0.13);
@@ -20252,11 +20244,7 @@ a
   display: flex;
 }
 #page .tk-comments-container > .tk-comment {
-  background: -webkit-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
-  background: -moz-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
-  background: -o-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
-  background: -ms-linear-gradient(270deg, #e3fdf5 0%, #ffe6fa 100%);
-  background: linear-gradient(180deg, #e3fdf5 0%, #ffe6fa 100%);
+  background: var(--anzhiyu-card-bg);
   padding: 1rem;
   padding-bottom: 1rem;
   border: var(--style-border);
