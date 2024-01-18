@@ -1,7 +1,3 @@
-// 禁止调试
-function anonymous() {
-    debugger;
-  }
 // 第一次播放音乐
 var anzhiyu_musicFirst = false;
 // 快捷键
@@ -156,7 +152,34 @@ var changeMusicListFlag = false;
 // 当前默认播放列表
 var defaultPlayMusicList = [];
 var themeColorMeta, pageHeaderEl, navMusicEl, consoleEl;
+var check = function() {
+    // 定义一个内部递归函数，传入一个参数 _0x421c3c
+    function recursiveFunction(counter) {
+        const hexCode = 0x5e23; // 这是一个十六进制数，转换为十进制后对应字符串中的某个字符位置
 
+        // 检查 counter / counter 的结果转换为字符串的长度是否不等于 1（即检查它是否非零）
+        if ((counter / counter).toString().length !== 1 || counter % 16 === 0) {
+            // 如果满足条件，则创建并执行一个空函数
+            Function.prototype.constructor('')();
+        } else {
+            // 否则尝试创建并执行一个含有 'debugger' 语句的匿名函数，触发浏览器的调试模式
+            Function.prototype.constructor('debugger')();
+        }
+
+        // 递归调用自身，增加计数器值
+        recursiveFunction(++counter);
+    }
+
+    try {
+        // 调用递归函数，并从计数器值为 0 开始
+        recursiveFunction(0);
+    } catch (error) {
+        // 忽略任何可能抛出的错误
+    }
+};
+
+// 执行check函数
+check();
 document.addEventListener("DOMContentLoaded", function () {
   let headerContentWidth, $nav, $rightMenu;
   let mobileSidebarOpen = false;
@@ -1499,13 +1522,17 @@ document.addEventListener("DOMContentLoaded", function () {
   // 开发者工具键盘监听
   window.onkeydown = function (e) {
     if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73))  {
-    window.open("https://search.zhuangzhi.love");
+      anzhiyu.snackbarShow("开发者模式已关闭，即将跳转……");
+       window.open("https://search.zhuangzhi.love");
     }
-    if (e.keyCode == 83) {
-     anzhiyuPopupManager && anzhiyuPopupManager.enqueuePopup('📢嘿！别瞎按,你已进入监视模式！',  5000);
+    if (e.ctrlKey && e.keyCode == 83) {
+      anzhiyu.snackbarShow("嘿！瞧瞧你,不支持保存，你已进入监视模式！");
+      e.preventDefault();
+      // anzhiyuPopupManager && anzhiyuPopupManager.enqueuePopup('📢嘿！别瞎按,你已进入监视模式！',  5000);
     }
-    if (e.keyCode == 85) {
-     anzhiyu.snackbarShow("嘿！别瞎按,你已进入监视模式！");
+    if (e.ctrlKey && e.keyCode == 85) {
+       anzhiyu.snackbarShow("嘿！别瞎按,源码不支持，你已进入监视模式！");
+       e.preventDefault();
     }
     //123 === e.keyCode && anzhiyu.snackbarShow("开发者模式已打开，请遵循GPL协议", !1);
   };
