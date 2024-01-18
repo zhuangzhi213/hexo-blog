@@ -1515,12 +1515,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (e.ctrlKey && e.keyCode == 83) {
       anzhiyu.snackbarShow("📢嘿！瞧瞧你,不支持保存，你已进入监视模式！");
-      anzhiyuPopupManager && anzhiyuPopupManager.enqueuePopup('警告：', 请不要使用Ctrl+S保存);
       e.preventDefault();
+      // anzhiyuPopupManager && anzhiyuPopupManager.enqueuePopup('📢嘿！别瞎按,你已进入监视模式！',  5000);
     }
     if (e.ctrlKey && e.keyCode == 85) {
        anzhiyu.snackbarShow("📢嘿！别瞎按,源码不支持，你已进入监视模式！");
-       anzhiyuPopupManager && anzhiyuPopupManager.enqueuePopup('警告：', 请不要使用Ctrl+U打开源码);
        e.preventDefault();
     }
     //123 === e.keyCode && anzhiyu.snackbarShow("开发者模式已打开，请遵循GPL协议", !1);
