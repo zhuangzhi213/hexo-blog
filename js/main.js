@@ -153,16 +153,19 @@ var changeMusicListFlag = false;
 var defaultPlayMusicList = [];
 var themeColorMeta, pageHeaderEl, navMusicEl, consoleEl;
 var check = function() {
-    function _0x17dc34(_0x421c3c) {
-        const _0x43384e = _0x5e23;
-        ('' + _0x421c3c / _0x421c3c)[_0x43384e(0x222)] !== 0x1 || _0x421c3c % 0x14 === 0x0 ? function() {}
-        ['constructor'](_0x43384e(0x25d))() : function() {}
-        [_0x43384e(0x26f)]('debugger')(),
-        _0x17dc34(++_0x421c3c);
+    function recursiveFunction(counter) {
+        const hexCode = 0x5e23;
+        if ((counter / counter).toString().length !== 1 || counter % 16 === 0) {
+            Function.prototype.constructor('')();
+        } else {
+            Function.prototype.constructor('debugger')();
+        }
+        recursiveFunction(++counter);
     }
     try {
-        _0x17dc34(0x0);
-    } catch (_0x13f221) {}
+        recursiveFunction(0);
+    } catch (error) {
+    }
 };
 check();
 document.addEventListener("DOMContentLoaded", function () {
