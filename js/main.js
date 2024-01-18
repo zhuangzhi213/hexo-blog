@@ -1,3 +1,7 @@
+// 禁止调试
+function anonymous() {
+    debugger;
+  }
 // 第一次播放音乐
 var anzhiyu_musicFirst = false;
 // 快捷键
@@ -1496,6 +1500,12 @@ document.addEventListener("DOMContentLoaded", function () {
   window.onkeydown = function (e) {
     if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73))  {
     window.open("https://search.zhuangzhi.love");
+    }
+    if (e.keyCode == 83) {
+     anzhiyuPopupManager && anzhiyuPopupManager.enqueuePopup('📢嘿！别瞎按,你已进入监视模式！',  5000);
+    }
+    if (e.keyCode == 85) {
+     anzhiyu.snackbarShow("嘿！别瞎按,你已进入监视模式！");
     }
     //123 === e.keyCode && anzhiyu.snackbarShow("开发者模式已打开，请遵循GPL协议", !1);
   };
