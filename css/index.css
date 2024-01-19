@@ -261,7 +261,6 @@ template {
 }
 .anzhiyufont,
 hr:before,
-#article-container a.headerlink::before,
 #post .post-outdate-notice:before,
 .note:not(.no-icon)::before {
   font-family: "anzhiyufont";
@@ -2918,7 +2917,7 @@ hr:before {
   left: 5%;
   z-index: 1;
   color: var(--hr-before-color);
-  content: '\f138';
+  content: '\f0c4';
   font-size: 16px;
   line-height: 1;
   -webkit-transition: all 1s ease-in-out;
@@ -14175,25 +14174,36 @@ blockquote {
 #article-container h6 .headerlink::before {
   font-size: 1.3rem;
 }
-#article-container a.headerlink::before {
-  content: '\f7e4';
-  float: right;
-  color: var(--headline-presudo);
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
-}
-#article-container a.headerlink:hover:after {
+#article-container h3:hover:after,
+#article-container h4:hover:after,
+#article-container h5:hover:after,
+#article-container h6:hover:after {
   color: var(--pseudo-hover);
 }
-#article-container a.headerlink h1:hover a.headerlink:after,
-#article-container a.headerlink h2:hover a.headerlink:after,
-#article-container a.headerlink h3:hover a.headerlink:after,
-#article-container a.headerlink h4:hover a.headerlink:after,
-#article-container a.headerlink h5:hover a.headerlink:after,
-#article-container a.headerlink h6:hover a.headerlink:after {
+#article-container h3 h1:hover a.headerlink:after,
+#article-container h4 h1:hover a.headerlink:after,
+#article-container h5 h1:hover a.headerlink:after,
+#article-container h6 h1:hover a.headerlink:after,
+#article-container h3 h2:hover a.headerlink:after,
+#article-container h4 h2:hover a.headerlink:after,
+#article-container h5 h2:hover a.headerlink:after,
+#article-container h6 h2:hover a.headerlink:after,
+#article-container h3 h3:hover a.headerlink:after,
+#article-container h4 h3:hover a.headerlink:after,
+#article-container h5 h3:hover a.headerlink:after,
+#article-container h6 h3:hover a.headerlink:after,
+#article-container h3 h4:hover a.headerlink:after,
+#article-container h4 h4:hover a.headerlink:after,
+#article-container h5 h4:hover a.headerlink:after,
+#article-container h6 h4:hover a.headerlink:after,
+#article-container h3 h5:hover a.headerlink:after,
+#article-container h4 h5:hover a.headerlink:after,
+#article-container h5 h5:hover a.headerlink:after,
+#article-container h6 h5:hover a.headerlink:after,
+#article-container h3 h6:hover a.headerlink:after,
+#article-container h4 h6:hover a.headerlink:after,
+#article-container h5 h6:hover a.headerlink:after,
+#article-container h6 h6:hover a.headerlink:after {
   opacity: 1;
   -ms-filter: none;
   filter: none;
