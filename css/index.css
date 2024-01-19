@@ -2654,7 +2654,7 @@ i.anzhiyu-icon-hashtag {
   --animation-in: cubic-bezier(0.6, 0.2, 0.25, 1);
   --animation-ot: opacity 0.5s var(--animation-in) backwards, transform 1s var(--animation-in) backwards;
   --animation-otf: opacity 0.5s var(--animation-in) backwards, transform 1s var(--animation-in) backwards, filter 0.7s var(--animation-in) backwards;
-  --global-font-size: 16px;
+  --global-font-size: 14px;
   --global-bg: #fff;
   --font-color: #4c4948;
   --hr-border: rgba(124,234,244,0.137);
@@ -2918,7 +2918,7 @@ hr:before {
   left: 5%;
   z-index: 1;
   color: var(--hr-before-color);
-  content: '\f0c4';
+  content: '\f138';
   font-size: 16px;
   line-height: 1;
   -webkit-transition: all 1s ease-in-out;
@@ -14176,7 +14176,7 @@ blockquote {
   font-size: 1.3rem;
 }
 #article-container a.headerlink::before {
-  content: '\f0c1';
+  content: '\f7e4';
   float: right;
   color: var(--headline-presudo);
   -webkit-transition: all 0.3s;
