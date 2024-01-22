@@ -21457,7 +21457,7 @@ html.hide-aside .layout > div:first-child {
   padding: 0;
   cursor: pointer;
   border: none;
-  height: 396px;
+  height: 390px;
   //height: 110px;
 }
 [data-theme="dark"] #aside-content .card-widget#card-wechat {
@@ -21472,8 +21472,8 @@ html.hide-aside .layout > div:first-child {
 
 #flip-wrapper {
   position: relative;
-  width: 300px;
-  height: 396px;
+  width: 260px;
+  height: 397px;
   //height: 110px;
   z-index: 1;
 }

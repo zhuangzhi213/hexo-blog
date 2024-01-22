@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -14,22 +13,14 @@
     <a href="https://www.zhuangzhi.love"><img src="https://z1.ax1x.com/2023/10/30/pimTMQJ.png" alt="琅環书生" style="width:150px;height:auto;" /></a>
   </div>
   <div id="box">
-    <p class="loading-text">即将离开琅環书生，请注意账号财产安全</p>
-    <p>您将要访问的外部网址是：<strong id="target-url"></strong></p>
-    <p class="btn-plane">
-      <button onclick="confirmRedirect()" rel="nofollow">继续访问</button>
-    </p>
-  </div>
+        <p class="loading-text">即将离开琅環书生，请注意账号财产安全</p>
+        <p>您将要访问的外部网址是：<strong id="target-url"></strong></p>
+        <p class="btn-plane">
+            <!-- 确保按钮点击事件绑定到confirmRedirect函数 -->
+            <button onclick="confirmRedirect()" rel="nofollow">继续访问</button>
+        </p>
+    </div>
 
-    <script>
-      function confirmRedirect() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const targetUrl = decodeURIComponent(urlParams.get('url'));
-        document.getElementById('target-url').innerText = targetUrl;
-
-        window.location.href = targetUrl;
-      }
-    </script>
-  </div>
+    <!-- 引入处理跳转逻辑的JS文件 -->
+    <script src="/path/to/your/script.js" defer></script>
 </body>
-</html>
