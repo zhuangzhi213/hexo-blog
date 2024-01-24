@@ -2780,6 +2780,12 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
   --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
   --anzhiyu-wihite-font: #fff;
+  --zz-card-info: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+  --zz-card-wechat-bg: linear-gradient(255deg, #9be15d 0%, #00e3ae 100%);
+  --zz-card-announcement: #fff;
+  --zz-card-neteasybg: #fff;
+  --zz-card-neteasy-face: url("https://neteasy.zhuangzhi.love/?id=341820959&theme=card&size=300&show_rainbow=1&title=琅環书生·最近在听&themeColor=e74444&show_random=1&mode=light");
+  --zz-caed-neteasy-backface: url("https://neteasy.zhuangzhi.love/?id=341820959&size=60&type=1&show_percent=1&number=6&title=琅環书生·听歌排行&mode=light");
 }
 @media (prefers-color-scheme: dark) {
 }
@@ -2820,6 +2826,12 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
   --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
   --anzhiyu-wihite-font: #f6f6f6;
+  --zz-card-info: #1d1e22;
+  --zz-card-wechat-bg: #1d1e22;
+  --zz-card-announcement: #1d1e22;
+  --zz-card-neteasybg: #1d1e22;
+  --zz-card-neteasy-face: url("https://neteasy.zhuangzhi.love/?id=341820959&theme=card&size=300&show_rainbow=1&title=琅環书生·最近在听&themeColor=e74444&show_random=1&mode=dark");
+  --zz-caed-neteasy-backface: url("https://neteasy.zhuangzhi.love/?id=341820959&size=60&type=1&show_percent=1&number=6&title=琅環书生·听歌排行&mode=dark");
 }
 body {
   position: relative;
@@ -3119,7 +3131,9 @@ blockquote > :last-child {
   margin: auto;
   border-width: 0px; /* 边框宽度 */
   border-style: solid; /* 边框样式，这里设置为实线 */
-  border-color: rgba(255,255,255,0);
+  border-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   border-radius: 50%; /* 如果希望头像是圆形边框，则设置为50%实现圆角效果 */
   -webkit-animation: loading_breathing 3s ease-in-out infinite;
   -moz-animation: loading_breathing 3s ease-in-out infinite;
@@ -3130,8 +3144,8 @@ blockquote > :last-child {
 @-moz-keyframes loading_breathing {
   0% {
     border-color: rgba(255,255,255,0);
-    -webkit-box-shadow: 0 0 0px #47d173;
-    box-shadow: 0 0 0px #47d173;
+    -webkit-box-shadow: 0 0 5px #47d173;
+    box-shadow: 0 0 5px #47d173;
   }
   50% {
     border-color: rgba(255,255,255,0);
@@ -3147,8 +3161,8 @@ blockquote > :last-child {
 @-webkit-keyframes loading_breathing {
   0% {
     border-color: rgba(255,255,255,0);
-    -webkit-box-shadow: 0 0 0px #47d173;
-    box-shadow: 0 0 0px #47d173;
+    -webkit-box-shadow: 0 0 5px #47d173;
+    box-shadow: 0 0 5px #47d173;
   }
   50% {
     border-color: rgba(255,255,255,0);
@@ -3164,8 +3178,8 @@ blockquote > :last-child {
 @-o-keyframes loading_breathing {
   0% {
     border-color: rgba(255,255,255,0);
-    -webkit-box-shadow: 0 0 0px #47d173;
-    box-shadow: 0 0 0px #47d173;
+    -webkit-box-shadow: 0 0 5px #47d173;
+    box-shadow: 0 0 5px #47d173;
   }
   50% {
     border-color: rgba(255,255,255,0);
@@ -3181,8 +3195,8 @@ blockquote > :last-child {
 @keyframes loading_breathing {
   0% {
     border-color: rgba(255,255,255,0);
-    -webkit-box-shadow: 0 0 0px #47d173;
-    box-shadow: 0 0 0px #47d173;
+    -webkit-box-shadow: 0 0 5px #47d173;
+    box-shadow: 0 0 5px #47d173;
   }
   50% {
     border-color: rgba(255,255,255,0);
@@ -9921,11 +9935,7 @@ h1.page-title + .tag-cloud-list {
   position: relative;
 }
 #aside-content >.card-widget.card-info::before {
-  background: -webkit-linear-gradient(270deg, #2af598 0%, #009efd 100%);
-  background: -moz-linear-gradient(270deg, #2af598 0%, #009efd 100%);
-  background: -o-linear-gradient(270deg, #2af598 0%, #009efd 100%);
-  background: -ms-linear-gradient(270deg, #2af598 0%, #009efd 100%);
-  background: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+  background: var(--zz-card-info);
   background-size: 400%;
   position: absolute;
   width: 100%;
@@ -10118,6 +10128,12 @@ h1.page-title + .tag-cloud-list {
   #aside-content > .card-info {
     background-size: 100% 70%;
   }
+}
+#aside-content >.card-widget.card-announcement {
+  background: var(--zz-card-announcement);
+}
+#aside-content >.card-widget.card-announcement {
+  background: var(--zz-card-announcement);
 }
 @-moz-keyframes more-btn-move {
   0%, 100% {
@@ -21449,8 +21465,8 @@ html.hide-aside .layout > div:first-child {
   }
 }
 
-#aside-content .card-widget#card-wechat {
-  //background: linear-gradient(255deg,#9be15d 0%, #00e3ae 100%);
+#aside-content .card-widget#card-neteasybg {
+  background: var(--zz-card-neteasybg);
   display: flex;
   justify-content: center;
   align-content: center;
@@ -21460,8 +21476,63 @@ html.hide-aside .layout > div:first-child {
   height: 390px;
   //height: 110px;
 }
+[data-theme="dark"] #aside-content .card-widget#card-neteasybg {
+  background: var(--zz-card-neteasybg);
+  border: var(--style-border);
+}
+
+#neteasy-flip-wrapper {
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+#neteasy-flip-wrapper {
+  position: relative;
+  width: 270px;
+  height: 397px;
+  //height: 110px;
+  z-index: 1;
+}
+#neteasy-flip-content {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: cubic-bezier(0, 0, 0, 1.29) 0.3s;
+}
+#aside-content #neteasy-flip-wrapper #neteasy-flip-content .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-size: 100%;
+}
+
+#aside-content #neteasy-flip-wrapper #neteasy-flip-content .back.face {
+  display: block;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  background-size: 100%;
+}
+#neteasy-flip-wrapper:hover #neteasy-flip-content {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+#aside-content .card-widget#card-wechat {
+  background: var(--zz-card-wechat-bg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  height: 110px;
+}
 [data-theme="dark"] #aside-content .card-widget#card-wechat {
-  background: linear-gradient(150deg, #5f605c,#3b3535,#292828);
+  background: var(--zz-card-wechat-bg);
   border: var(--style-border);
 }
 
@@ -21472,9 +21543,8 @@ html.hide-aside .layout > div:first-child {
 
 #flip-wrapper {
   position: relative;
-  width: 260px;
-  height: 397px;
-  //height: 110px;
+  width: 235px;
+  height: 110px;
   z-index: 1;
 }
 #flip-content {
