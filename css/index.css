@@ -2773,7 +2773,7 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-post-tabs-bg: #f2f5f8;
   --anzhiyu-secondbg: #f7f7f9;
   --anzhiyu-shadow-nav: 0 5px 12px -5px rgba(102,68,68,0.05);
-  --anzhiyu-card-bg: #fff;
+  --anzhiyu-card-bg: url("/img/card_bg2.png");
   --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
   --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
   --anzhiyu-card-border: #e3e8f7;
@@ -2782,8 +2782,8 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-wihite-font: #fff;
   --zz-card-info: linear-gradient(180deg, #2af598 0%, #009efd 100%);
   --zz-card-wechat-bg: linear-gradient(255deg, #9be15d 0%, #00e3ae 100%);
-  --zz-card-announcement: #fff;
-  --zz-card-neteasybg: #fff;
+  --zz-card-weibo: url("/img/card_bg2.png");
+  --zz-card-neteasy: url("/img/card_bg2.png");
   --zz-card-neteasy-face: url("https://neteasy.zhuangzhi.love/?id=341820959&theme=card&size=300&show_rainbow=1&title=琅環书生·最近在听&themeColor=e74444&show_random=1&mode=light");
   --zz-caed-neteasy-backface: url("https://neteasy.zhuangzhi.love/?id=341820959&size=60&type=1&show_percent=1&number=6&title=琅環书生·听歌排行&mode=light");
 }
@@ -2828,8 +2828,8 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-wihite-font: #f6f6f6;
   --zz-card-info: #1d1e22;
   --zz-card-wechat-bg: #1d1e22;
-  --zz-card-announcement: #1d1e22;
-  --zz-card-neteasybg: #1d1e22;
+  --zz-card-announcement: url("/img/card-announcement-dark.svg");
+  --zz-card-neteasy: #1d1e22;
   --zz-card-neteasy-face: url("https://neteasy.zhuangzhi.love/?id=341820959&theme=card&size=300&show_rainbow=1&title=琅環书生·最近在听&themeColor=e74444&show_random=1&mode=dark");
   --zz-caed-neteasy-backface: url("https://neteasy.zhuangzhi.love/?id=341820959&size=60&type=1&show_percent=1&number=6&title=琅環书生·听歌排行&mode=dark");
 }
@@ -3020,26 +3020,6 @@ a:hover {
 }
 .pull-right {
   float: right;
-}
-img[src=''],
-img:not([src]) {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-}
-img[data-lazy-src]:not(.loaded) {
-  filter: blur(8px) brightness(1);
-}
-img[data-lazy-src].error {
-  filter: none;
-  opacity: 1 !important;
-  -ms-filter: none !important;
-  filter: none !important;
-}
-img[data-lazy-src]:not(.loaded) {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
 }
 img[src=''],
 img:not([src]) {
@@ -9819,7 +9799,10 @@ h1.page-title + .tag-cloud-list {
   animation: more-btn-move 1s infinite;
 }
 #aside-content .card-announcement .item-headline i {
-  color: var(--anzhiyu-main);
+  color: rgba(255,255,255,0);
+}
+#aside-content .card-announcement .item-headline span {
+  color: rgba(255,255,255,0);
 }
 #aside-content .card-weibo .item-headline i {
   color: #d52c2b;
@@ -10130,9 +10113,12 @@ h1.page-title + .tag-cloud-list {
   }
 }
 #aside-content >.card-widget.card-announcement {
-  background: var(--zz-card-announcement);
+  background: var(--zz-card-announcementlight);
 }
-#aside-content >.card-widget.card-announcement {
+#aside-content >.card-widget.card-weibo {
+  background: var(--zz-card-weibo);
+}
+[data-theme="dark"] #aside-content >.card-widget.card-announcement {
   background: var(--zz-card-announcement);
 }
 @-moz-keyframes more-btn-move {
@@ -19563,7 +19549,7 @@ p.p.gray {
   filter: brightness(0.8);
 }
 [data-theme='dark'] img {
-  filter: blur(0) brightness(0.8);
+  filter: brightness(0.8);
 }
 [data-theme='dark'] #aside-content .aside-list > .aside-list-item:not(:last-child) {
   border-bottom: 1px dashed rgba(255,255,255,0.1);
@@ -21465,8 +21451,8 @@ html.hide-aside .layout > div:first-child {
   }
 }
 
-#aside-content .card-widget#card-neteasybg {
-  background: var(--zz-card-neteasybg);
+#aside-content .card-widget#card-neteasy {
+  background: var(--zz-card-neteasy);
   display: flex;
   justify-content: center;
   align-content: center;
@@ -21476,8 +21462,8 @@ html.hide-aside .layout > div:first-child {
   height: 390px;
   //height: 110px;
 }
-[data-theme="dark"] #aside-content .card-widget#card-neteasybg {
-  background: var(--zz-card-neteasybg);
+[data-theme="dark"] #aside-content .card-widget#card-neteasy {
+  background: var(--zz-card-neteasy);
   border: var(--style-border);
 }
 
@@ -25025,7 +25011,7 @@ div#swiper_container:hover {
   height: 100%;
   top: 0;
   left: 0;
-  box-shadow: 0 -109px 133px -9px #000000 inset;
+  box-shadow: 0 -109px 133px -9px #00000069 inset;
 }
 
 .topGroup .todayCard.hide {
@@ -25184,6 +25170,10 @@ div#swiper_container:hover {
 .topGroup .banner-button:hover {
   background: var(--anzhiyu-theme);
   color: var(--anzhiyu-white);
+}
+
+.top_group_banner_image {
+  object-fit: cover;
 }
 
 #local-search .search-dialog .local-search__hit-item:before {
