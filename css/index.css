@@ -2773,7 +2773,10 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-post-tabs-bg: #f2f5f8;
   --anzhiyu-secondbg: #f7f7f9;
   --anzhiyu-shadow-nav: 0 5px 12px -5px rgba(102,68,68,0.05);
-  --anzhiyu-card-bg: url("/img/card_bg.webp");
+  --anzhiyu-card-bg: #fff;
+  --zz-card-bg: url("/img/card_bg.webp");
+  --zz-tab-bg: url("/img/card_bg.webp");
+  --zz-post-bg: url("/img/card_bg.webp");
   --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
   --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
   --anzhiyu-card-border: #e3e8f7;
@@ -16339,7 +16342,7 @@ li.card-category-list-item {
 #aside-content .card-widget {
   -webkit-box-shadow: var(--anzhiyu-shadow-border);
   box-shadow: var(--anzhiyu-shadow-border);
-  background: var(--anzhiyu-card-bg);
+  background: var(--zz-card-bg);
   border: var(--style-border);
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -20212,7 +20215,7 @@ a
     border: var(--style-border-always);
     -webkit-box-shadow: var(--anzhiyu-shadow-border);
     box-shadow: var(--anzhiyu-shadow-border);
-    background: var(--anzhiyu-card-bg);
+    background: var(--zz-card-bg);
   }
   #twikoo .tk-replies .tk-comment {
     border: none;
@@ -20328,7 +20331,7 @@ a
   margin: 30px 0px 0px 0px;
 }
 #twikoo .tk-extra {
-  background: var(--anzhiyu-card-bg);
+  background: var(--zz-card-bg);
   border: var(--style-border-always);
   padding: 4px 8px;
   border-radius: 8px;
@@ -20366,7 +20369,7 @@ a
   margin-bottom: 0.5rem;
 }
 #body-wrap.page .el-input__inner {
-  background: var(--anzhiyu-card-bg);
+  background: var(--zz-card-bg);
   -webkit-box-shadow: var(--anzhiyu-shadow-border);
   box-shadow: var(--anzhiyu-shadow-border);
   color: var(--anzhiyu-fontcolor);
@@ -20391,7 +20394,7 @@ a
   padding-top: 1rem;
   border: none;
   border-top: var(--style-border-dashed);
-  background: var(--anzhiyu-card-bg);
+  background: var(--zz-card-bg);
 }
 #post-comment .comment-tips {
   background-color: rgba(103,194,58,0.13);
@@ -20413,7 +20416,7 @@ a
   display: flex;
 }
 #page .tk-comments-container > .tk-comment {
-  background: var(--anzhiyu-card-bg);
+  background: var(--zz-card-bg);
   padding: 1rem;
   padding-bottom: 1rem;
   border: var(--style-border);
@@ -20452,7 +20455,7 @@ a
     top: -126px;
   }
   #twikoo .el-textarea__inner {
-    background: var(--anzhiyu-card-bg) !important;
+    background: var(--zz-card-bg) !important;
     overflow: hidden;
     resize: none !important;
   }
@@ -21392,7 +21395,7 @@ html.hide-aside .layout > div:first-child {
 }
 #recent-posts .recent-post-item {
   height: fit-content;
-  background: var(--anzhiyu-card-bg);
+  background: var(--zz-post-bg);
   border-radius: 12px;
   cursor: pointer;
   border: var(--style-border);
@@ -21630,7 +21633,7 @@ a.catalog-more:hover {
 
 #category-bar {
   padding: 0.5rem 10px;
-  background: var(--anzhiyu-card-bg);
+  background: var(--zz-tab-bg);
   display: flex;
   white-space: nowrap;
   overflow: hidden;
@@ -23447,7 +23450,7 @@ body[data-type="essay"] #page .author-content-item .card-content .banner-button-
 }
 
 #bbTimeList {
-  background: var(--anzhiyu-white);
+  background: var(--zz-card-bg);
   color: var(--anzhiyu-fontcolor);
   padding: 0.5rem 1rem;
   border-radius: 12px;
