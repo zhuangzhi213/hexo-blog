@@ -1511,9 +1511,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.onkeydown = function (e) {
     if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 73))  {
       anzhiyu.snackbarShow("开发者模式已关闭，即将跳转……");
-      setTimeout(function () {
-        window.open("https://search.zhuangzhi.love");
-      }, 1000);
+      window.open("https://search.zhuangzhi.love");
     }
     if (e.ctrlKey && e.keyCode == 83) {
       anzhiyu.snackbarShow("📢嘿！瞧瞧你,不支持保存，你已进入监视模式！");
