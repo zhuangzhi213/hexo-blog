@@ -1,9 +1,9 @@
 // 定义一个包含图片URL的数组
 var imageUrls = [
-  "/img/card-announcement-light01.svg",
-  "/img/card-announcement-light02.svg",
-  "/img/card-announcement-light03.svg",
-  "/img/card-announcement-light04.svg",
+  "/img/card-announcement-light01.png",
+  "/img/card-announcement-light02.png",
+  "/img/card-announcement-light03.png",
+  "/img/card-announcement-light04.png",
 ];
 
 function getRandomImage() {
