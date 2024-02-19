@@ -1,6 +1,6 @@
 // 定义一个包含图片URL的数组
 var imageUrls = [
-  "/img/card-bg1.png",
+  "/img/card_bg1.png",
 ];
 
 function getRandomImage() {
