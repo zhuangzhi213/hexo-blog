@@ -2787,8 +2787,8 @@ i.anzhiyu-icon-hashtag {
   --zz-card-wechat-bg: linear-gradient(255deg, #9be15d 0%, #00e3ae 100%);
   --zz-card-weibo: url("/img/card_bg2.png");
   --zz-card-neteasy: url("/img/card_bg2.png");
-  --zz-card-neteasy-face: url("https://neteasy.zhuangzhi.love/?id=341820959&theme=card&size=300&show_rainbow=1&title=琅環书生·最近在听&themeColor=e74444&show_random=1&mode=light");
-  --zz-caed-neteasy-backface: url("https://neteasy.zhuangzhi.love/?id=341820959&size=60&type=1&show_percent=1&number=6&title=琅環书生·听歌排行&mode=light");
+  --zz-card-neteasy-face: url("https://neteasy.zlog.us.kg/?id=341820959&theme=card&size=300&show_rainbow=1&title=琅環书生·最近在听&themeColor=e74444&show_random=1&mode=light");
+  --zz-caed-neteasy-backface: url("https://neteasy.zlog.us.kg/?id=341820959&size=60&type=1&show_percent=1&number=6&title=琅環书生·听歌排行&mode=light");
 }
 @media (prefers-color-scheme: dark) {
 }
@@ -2833,8 +2833,8 @@ i.anzhiyu-icon-hashtag {
   --zz-card-wechat-bg: #1d1e22;
   --zz-card-announcement: url("/img/card-announcement-dark.svg");
   --zz-card-neteasy: #1d1e22;
-  --zz-card-neteasy-face: url("https://neteasy.zhuangzhi.love/?id=341820959&theme=card&size=300&show_rainbow=1&title=琅環书生·最近在听&themeColor=e74444&show_random=1&mode=dark");
-  --zz-caed-neteasy-backface: url("https://neteasy.zhuangzhi.love/?id=341820959&size=60&type=1&show_percent=1&number=6&title=琅環书生·听歌排行&mode=dark");
+  --zz-card-neteasy-face: url("https://neteasy.zlog.us.kg/?id=341820959&theme=card&size=300&show_rainbow=1&title=琅環书生·最近在听&themeColor=e74444&show_random=1&mode=dark");
+  --zz-caed-neteasy-backface: url("https://neteasy.zlog.us.kg/?id=341820959&size=60&type=1&show_percent=1&number=6&title=琅環书生·听歌排行&mode=dark");
 }
 body {
   position: relative;
